@@ -27,10 +27,10 @@ Plumby - prototype of the app for the services that ordinary users can request f
 * Signup - will be one for both users and service providers
 * Professionals can post their services - post tab: bio info, services that can be provided with prices
 * Users can scroll down the feed with announcements
-* Users can leave comments - reviews for the professional - after they requested the job
+* Users can leave reviews for the professional - after they requested the job
 * Users can see personal/contact information of the professional
 * Users can request this job (working as a like button)
-* Users can track requested jobs in tab with current request (also leave comment there)
+* Users can track requested jobs in tab with current request (also leave reviews there)
 * Professionals can see the history of of their postings - another feed 
 * Professionals contact users through user's personal information given in my publications view
 
@@ -51,7 +51,7 @@ Plumby - prototype of the app for the services that ordinary users can request f
 ### 2. Screen Archetypes
 
 * Sign Up / Login Screen
-   * Both users and professionals can login into existing account or sign up and      create a new one
+   * Both users and professionals can login into existing account or sign up and create a new one
 
 * Feed Screen:
    * Users can see the feed of all possible service they can request
@@ -66,6 +66,7 @@ Plumby - prototype of the app for the services that ordinary users can request f
    * Professionals later can contact the person who requested their service
 * My Requests Screen:
    * Users can see the current status of the service they requested.
+   * Users can review the job
  
   
 
