@@ -92,3 +92,104 @@ Plumby - prototype of the app for the services that ordinary users can request f
 
 ## Wireframes
 <img src="https://user-images.githubusercontent.com/65302583/99138039-695e4b00-25f3-11eb-8336-6a536ba9dba5.jpg" width=600>
+
+## Schema 
+### Models
+#### Job Publications
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the user post (default field) |
+   | author        | Pointer to User| name of the author of the publication |
+   | price         | Number     | to put on the job posting  |
+   | rating       | Array of Numbers   | to calculate the average and put on the job posting |
+   | description | String   | to explain what type of job is performed |
+   | requests    | Array of Pointers to users   | to pull the requests |
+   | requestedAt     | DateTime | To see the requested time |
+   
+#### Users
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userId      | String   | unique id for the user (default field) |
+   | username        | String| needed for login, and created at signup |
+   | phoneNumber         | String     | needed for login, and created at signup |
+   | password       | String   | needed for login, and created at signup |
+   | description | String   | to explain what type of job is performed |
+   | myPublications    | Array of Pointers to user's job publications   | to see my publications |
+   | requestedPublications    | Array of Pointers to user's job publications   | to see requested by me publications |
+
+### Networking
+#### List of network requests by screen
+   - Home Feed Screen
+      - (Read/GET) Query all posts for the general feed
+      ``` swift
+      ```
+      - (Update/PUT)Request a Job
+      ``` swift
+      ```
+   - My Publications Screen
+      - (Read/GET) Query the publications made by me
+      ``` swift
+      let query = PFQuery(className:"Publication")
+      query.whereKey("author", equalTo:"currentUser")
+      query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+          if let error = error {
+              // Log details of the failure
+              print(error.localizedDescription)
+          } else if let objects = objects {
+              // The find succeeded.
+              print("Successfully retrieved \(objects.count) publications.")
+              // Do something with the found objects
+              for object in objects {
+                  print(object.objectId as Any)
+              }
+          }
+      }
+      ```
+   - Create a Publication Screen
+      - (Create/POST) Creating a new job publication
+      ```swift
+        let publication = PFObject(className:"Publication")
+        publication["author"] = "milstetsenko"
+        publication["price"] = 75
+        publication["description"] = "String"
+        publication.saveInBackground { (succeeded, error)  in
+            if (succeeded) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
+            }
+          }
+       ```
+  - Requested Publications Screen
+    - (Read/GET) Query publications requested by me
+    ```swift
+    let query = PFQuery(className:"Publication")
+    query.whereKey("Requests", equalTo:"currentUser")
+    query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+        if let error = error {
+            // Log details of the failure
+            print(error.localizedDescription)
+        } else if let objects = objects {
+            // The find succeeded.
+            print("Successfully retrieved \(objects.count) publications.")
+            // Do something with the found objects
+            for object in objects {
+                print(object.objectId as Any)
+            }
+        }
+     }
+     ```
+    -  (Update/PUT) Rate the job after receiving the services
+    ```swift
+    let query = PFQuery(className:"Publication")
+    query.getObjectInBackground(withId: "ObjectId") { (publication: PFObject?, error: Error?) inif let error = error {
+        print(error.localizedDescription)
+    } else if let publication = publication {
+        publication["Rating"].append(Number)
+        publication.saveInBackground()
+    }
+    }
+    ```
+
