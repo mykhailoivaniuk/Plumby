@@ -105,8 +105,7 @@ Plumby - prototype of the app for the services that ordinary users can request f
    | price         | Number     | to put on the job posting  |
    | rating       | Array of Numbers   | to calculate the average and put on the job posting |
    | description | String   | to explain what type of job is performed |
-   | requests    | Array of Pointers to users   | to pull the requests |
-   | requestedAt     | DateTime | To see the requested time |
+   | requests    | Array of Pointers to Requests   | to pull the requests |
    
 #### Users
 
@@ -120,14 +119,58 @@ Plumby - prototype of the app for the services that ordinary users can request f
    | myPublications    | Array of Pointers to user's job publications   | to see my publications |
    | requestedPublications    | Array of Pointers to user's job publications   | to see requested by me publications |
 
+#### Requests
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | unique id for the request (default field) |
+   | requester        | Pointer to User | reference the customer who requests the work order |
+   | requestee         | Pointer to User     | reference the person who will complete the work order |
+   | requested_on       | Date object   | the time & date on which the job is requested (epoch in seconds) |
+   | post | Pointer to Job Post   | reference the original job posting that is requested |
+
 ### Networking
 #### List of network requests by screen
    - Home Feed Screen
       - (Read/GET) Query all posts for the general feed
       ``` swift
+      let query = PFQuery(className: "Posts")
+        query.includeKeys(["author", "price", "rating"])
+        query.limit = 20
+        query.findObjectsInBackground{
+            (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+                self.refreshControl.endRefreshing()
+            }
+        }
       ```
       - (Update/PUT)Request a Job
       ``` swift
+      
+      let cell = tableView.dequeueReusableCell(withReuseIdentifier: "PostCell") as! PostTableViewCell
+      // get the post
+		  let post = posts[indexPath.row]
+				
+			// create new request object
+      let newRequest = new PFObject(className: "Requests")
+		  newRequest["requester"] = PFUser.current()!
+			newRequest["post"] = post
+			newRequest["requestee"] = post["author"]
+			newRequest["requested_on"] = Date() // return epoch time in seconds
+				
+			// add the new request to the post's array of requests
+			post["requests"].append(newRequest)
+
+			// save the new request in its table
+			newRequest.saveInBackground{
+           (success, error) in
+               if success {
+                   // do something
+               } else {
+                   // raise error alert
+               }
+       }
       ```
    - My Publications Screen
       - (Read/GET) Query the publications made by me
