@@ -133,7 +133,7 @@ Plumby - prototype of the app for the services that ordinary users can request f
    - Home Feed Screen
       - (Read/GET) Query all posts for the general feed
       ``` swift
-      let query = PFQuery(className: "Posts")
+      	let query = PFQuery(className: "Posts")
         query.includeKeys(["author", "price", "rating"])
         query.limit = 20
         query.findObjectsInBackground{
@@ -148,22 +148,22 @@ Plumby - prototype of the app for the services that ordinary users can request f
       - (Update/PUT)Request a Job
       ``` swift
       
-      let cell = tableView.dequeueReusableCell(withReuseIdentifier: "PostCell") as! PostTableViewCell
-      // get the post
-		  let post = posts[indexPath.row]
+      	let cell = tableView.dequeueReusableCell(withReuseIdentifier: "PostCell") as! PostTableViewCell
+      	// get the post
+	let post = posts[indexPath.row]
 				
-			// create new request object
-      let newRequest = new PFObject(className: "Requests")
-		  newRequest["requester"] = PFUser.current()!
-			newRequest["post"] = post
-			newRequest["requestee"] = post["author"]
-			newRequest["requested_on"] = Date() // return epoch time in seconds
+	// create new request object
+      	let newRequest = new PFObject(className: "Requests")
+	newRequest["requester"] = PFUser.current()!
+	newRequest["post"] = post
+	newRequest["requestee"] = post["author"]
+	newRequest["requested_on"] = Date() // return epoch time in seconds
 				
-			// add the new request to the post's array of requests
-			post["requests"].append(newRequest)
+	// add the new request to the post's array of requests
+	post["requests"].append(newRequest)
 
-			// save the new request in its table
-			newRequest.saveInBackground{
+	// save the new request in its table
+	newRequest.saveInBackground{
            (success, error) in
                if success {
                    // do something
