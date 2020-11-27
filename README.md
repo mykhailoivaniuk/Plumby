@@ -236,4 +236,20 @@ Plumby - prototype of the app for the services that ordinary users can request f
     }
     }
     ```
+    
+    ## Update on The Project
+    ### Sprint 2
+    
+    ### Icons, photographs, logo:
+    
+    
+    
+    ### Create a Publication Screen:
+      #### Coded by Thu
+    <img src="" width=600>
+    
+      ### Login and Signup Screen:
+      #### Coded by Mykhailo
+    <img src="" width=600>
+
 
