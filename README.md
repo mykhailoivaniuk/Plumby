@@ -5,6 +5,7 @@
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
+3. [Update on the Project](#Update-on-The-Project)
 
 ## Overview
 ### Description
