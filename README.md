@@ -103,7 +103,9 @@ Plumby - prototype of the app for the services that ordinary users can request f
    | ------------- | -------- | ------------|
    | objectId      | String   | unique id for the user post (default field) |
    | author        | Pointer to User| name of the author of the publication |
+   | title	| String | Title/short summary for the job |
    | price         | Number     | to put on the job posting  |
+   | location	| String	| where the author is located |
    | rating       | Array of Numbers   | to calculate the average and put on the job posting |
    | description | String   | to explain what type of job is performed |
    | requests    | Array of Pointers to Requests   | to pull the requests |
