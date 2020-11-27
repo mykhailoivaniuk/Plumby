@@ -242,8 +242,7 @@ Plumby - prototype of the app for the services that ordinary users can request f
     
     ## Update on The Project
     ### Sprint 2
-    
-    ### Icons, photographs, logo:
+
     
     
     
