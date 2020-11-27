@@ -8,7 +8,6 @@
 import UIKit
 import Parse
 import AlamofireImage
-import IQKeyboardManagerSwift
 
 class PublishViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
@@ -47,6 +46,21 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func onSubmit(_ sender: Any) {
+        let publication = PFObject(className:"Publication")
+        publication["author"] = PFUser.current()!
+        publication["price"] = priceField.text!
+        publication["description"] = descriptionField.text!
+        publication["title"] = titleField.text!
+        publication["location"] = locationField.text!
+        publication["rating"] = [Int]()
+        publication["requests"] = [PFObject]() // an array of Request objects
+        publication.saveInBackground { (succeeded, error)  in
+            if (succeeded) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
+            }
+        }
     }
     
     @IBAction func onCancel(_ sender: Any) {
