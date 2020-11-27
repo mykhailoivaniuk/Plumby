@@ -8,20 +8,23 @@
 import UIKit
 import Parse
 import AlamofireImage
+import IQKeyboardManagerSwift
 
-class PublishViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PublishViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var locationField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
     
+    @IBOutlet weak var activeTextField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
     
     @IBAction func onCamera(_ sender: Any) {
         let picker = UIImagePickerController()
@@ -47,7 +50,12 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func onCancel(_ sender: Any) {
-        
+        // reset image and text fields to original state
+        imageView.image = UIImage(named: "image_placeholder")
+        titleField.text = ""
+        priceField.text = ""
+        locationField.text = ""
+        descriptionField.text = ""
     }
     
     @IBAction func onTap(_ sender: Any) {

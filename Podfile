@@ -6,6 +6,7 @@ target 'Plumby' do
   use_frameworks!
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'IQKeyboardManagerSwift'
 
   # Pods for Plumby
 
