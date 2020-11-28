@@ -64,12 +64,23 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func onCancel(_ sender: Any) {
-        // reset image and text fields to original state
-        imageView.image = UIImage(named: "image_placeholder")
-        titleField.text = ""
-        priceField.text = ""
-        locationField.text = ""
-        descriptionField.text = ""
+        let refreshAlert = UIAlertController(title: "Delete", message: "All fields will be emptied.", preferredStyle: UIAlertController.Style.alert)
+
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            // reset image and text fields to original state
+            self.imageView.image = UIImage(named: "image_placeholder")
+            self.titleField.text = ""
+            self.priceField.text = ""
+            self.locationField.text = ""
+            self.descriptionField.text = ""
+        }))
+
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+              // do nothing
+        }))
+
+        present(refreshAlert, animated: true, completion: nil)
+        
     }
     
     @IBAction func onTap(_ sender: Any) {

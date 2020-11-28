@@ -39,7 +39,6 @@
         <!--Publish View Controller-->
         <scene sceneID="329-Jm-Heq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KSU-6h-66g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="Qd9-1p-57f" customClass="PublishViewController" customModule="Plumby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IKg-ql-tem">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -157,6 +156,7 @@
                         <outlet property="titleField" destination="9w3-zy-119" id="0ay-Yl-Suv"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSU-6h-66g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="2WK-tK-bHy">
                     <connections>
                         <action selector="onCamera:" destination="Qd9-1p-57f" id="fLb-uE-DKw"/>
