@@ -248,7 +248,7 @@ Plumby - prototype of the app for the services that ordinary users can request f
     
     ### Create a Publication Screen:
       #### Coded by Thu
-    <img src="" width=600>
+    <img src="https://i.imgur.com/NI2HQRm.gif" width=600>
     
       ### Login and Signup Screen:
       #### Coded by Mykhailo
