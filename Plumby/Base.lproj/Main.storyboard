@@ -396,7 +396,13 @@
                         <viewLayoutGuide key="safeArea" id="5b5-Tc-mJe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Tis-vm-0vw"/>
+                    <navigationItem key="navigationItem" id="Tis-vm-0vw">
+                        <barButtonItem key="leftBarButtonItem" title="Go Back " id="RFa-yX-IXy">
+                            <connections>
+                                <segue destination="eUV-os-1Eu" kind="presentation" modalPresentationStyle="fullScreen" id="il9-uW-BBK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="logintextfield" destination="Vyd-wd-lL3" id="vsf-wk-FmY"/>
                         <outlet property="passwordField" destination="WwE-BD-eeR" id="qrg-J0-R1S"/>
@@ -486,7 +492,13 @@
                         <viewLayoutGuide key="safeArea" id="mbW-8O-8q0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YVA-IJ-Gz4"/>
+                    <navigationItem key="navigationItem" id="YVA-IJ-Gz4">
+                        <barButtonItem key="leftBarButtonItem" title="Go Back" id="2jk-Ll-6TS">
+                            <connections>
+                                <segue destination="eUV-os-1Eu" kind="presentation" modalPresentationStyle="fullScreen" id="7i9-lR-sbw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="PT7-bz-HlN" id="2O9-Ev-oBW"/>
                         <outlet property="passwordTextFieldSU" destination="IUP-sl-ru2" id="wWL-sc-GlK"/>
@@ -502,7 +514,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="r3D-fR-C79">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N2P-TM-DyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="tabBarController" id="D0F-jP-2HN" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eHO-Qy-IST">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -516,6 +527,7 @@
                         <segue destination="SFN-Cx-KNf" kind="relationship" relationship="viewControllers" id="Xak-6q-ql6"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2P-TM-DyC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="761"/>
         </scene>
@@ -557,7 +569,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="d8S-Bq-QdM"/>
+        <segue reference="HsX-PO-OeO"/>
+        <segue reference="7i9-lR-sbw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="image_placeholder" width="375" height="375"/>
