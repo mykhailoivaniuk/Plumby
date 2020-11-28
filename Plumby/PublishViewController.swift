@@ -46,7 +46,7 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func onSubmit(_ sender: Any) {
-        let publication = PFObject(className:"Publication")
+        let publication = PFObject(className:"Publications")
         publication["author"] = PFUser.current()!
         publication["price"] = priceField.text!
         publication["description"] = descriptionField.text!
@@ -57,30 +57,52 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
         publication.saveInBackground { (succeeded, error)  in
             if (succeeded) {
                 // The object has been saved.
+                let alert = UIAlertController(title: "Publication posted!", message: "Do you want to stay or navigate to My Publications?", preferredStyle: UIAlertController.Style.alert)
+
+                alert.addAction(UIAlertAction(title: "Stay", style: .default, handler: { (action: UIAlertAction!) in
+                    self.resetFields()
+                }))
+
+                alert.addAction(UIAlertAction(title: "My Publications", style: .cancel, handler: { (action: UIAlertAction!) in
+                    self.resetFields()
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "myPublicationsViewController") as! MyPublicationsViewController
+//                            self.present(newViewController, animated: true, completion: nil)
+//                    newViewController.modalPresentationStyle = .fullScreen
+                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "myPublicationsViewController") as! MyPublicationsViewController
+                    self.navigationController?.pushViewController(newViewController, animated: true)
+                }))
+
+                self.present(alert, animated: true, completion: nil)
             } else {
                 // There was a problem, check error.description
+                print("Cannot save your publication: \(error?.localizedDescription)")
             }
         }
     }
     
     @IBAction func onCancel(_ sender: Any) {
-        let refreshAlert = UIAlertController(title: "Delete", message: "All fields will be emptied.", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Delete", message: "All fields will be emptied. Do you want to proceed?", preferredStyle: UIAlertController.Style.alert)
 
-        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-            // reset image and text fields to original state
-            self.imageView.image = UIImage(named: "image_placeholder")
-            self.titleField.text = ""
-            self.priceField.text = ""
-            self.locationField.text = ""
-            self.descriptionField.text = ""
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            self.resetFields()
         }))
 
-        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
               // do nothing
         }))
 
-        present(refreshAlert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
         
+    }
+    
+    func resetFields() {
+        // reset image and text fields to original state
+        self.imageView.image = UIImage(named: "image_placeholder")
+        self.titleField.text = ""
+        self.priceField.text = ""
+        self.locationField.text = ""
+        self.descriptionField.text = ""
     }
     
     @IBAction func onTap(_ sender: Any) {

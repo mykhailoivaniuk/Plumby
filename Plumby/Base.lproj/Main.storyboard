@@ -146,7 +146,7 @@
         <!--My Publications View Controller-->
         <scene sceneID="2qN-bw-urd">
             <objects>
-                <viewController storyboardIdentifier="myPublicationsViewController" id="4p0-pz-1xa" customClass="MyPublicationsViewController" customModule="Plumby" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myPublicationsViewController" modalPresentationStyle="fullScreen" id="4p0-pz-1xa" customClass="MyPublicationsViewController" customModule="Plumby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMd-qY-rUj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
