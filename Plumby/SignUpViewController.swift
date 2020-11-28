@@ -1,0 +1,53 @@
+//
+//  SignUpViewController.swift
+//  Plumby
+//
+//  Created by Mykhailo Ivaniuk on 11/27/20.
+//
+
+import UIKit
+import Parse
+
+class SignUpViewController: UIViewController {
+
+    @IBOutlet weak var passwordTextFieldSU: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+
+    @IBAction func onSignUp(_ sender: Any) {
+        let user = PFUser()
+        user.username = usernameTextField.text
+        user.password = passwordTextFieldSU.text
+        user.email = emailTextField.text
+        user["phone"] = phoneTextField.text!
+
+        user.signUpInBackground { (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "signUpSegue", sender: nil)
+                print("User phone is : \(user["phone"])")
+            }
+            else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+        }
+        
+    }
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+

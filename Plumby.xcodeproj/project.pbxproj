@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006ACE1F25720E42002CC268 /* startControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE1E25720E42002CC268 /* startControllerViewController.swift */; };
+		006ACE2425721017002CC268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2325721017002CC268 /* LoginViewController.swift */; };
+		006ACE2925721026002CC268 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2825721026002CC268 /* SignUpViewController.swift */; };
+		006ACE2E25721EFA002CC268 /* MyPublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2D25721EFA002CC268 /* MyPublicationsViewController.swift */; };
 		00990128255E5C7700C30354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990127255E5C7700C30354 /* AppDelegate.swift */; };
 		0099012A255E5C7700C30354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990129255E5C7700C30354 /* SceneDelegate.swift */; };
 		0099012F255E5C7700C30354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0099012D255E5C7700C30354 /* Main.storyboard */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		006ACE1E25720E42002CC268 /* startControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startControllerViewController.swift; sourceTree = "<group>"; };
+		006ACE2325721017002CC268 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		006ACE2825721026002CC268 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		006ACE2D25721EFA002CC268 /* MyPublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPublicationsViewController.swift; sourceTree = "<group>"; };
 		00990124255E5C7700C30354 /* Plumby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plumby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00990127255E5C7700C30354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00990129255E5C7700C30354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +131,10 @@
 				00990130255E5C7900C30354 /* Assets.xcassets */,
 				00990132255E5C7900C30354 /* LaunchScreen.storyboard */,
 				00990135255E5C7900C30354 /* Info.plist */,
+				006ACE1E25720E42002CC268 /* startControllerViewController.swift */,
+				006ACE2325721017002CC268 /* LoginViewController.swift */,
+				006ACE2825721026002CC268 /* SignUpViewController.swift */,
+				006ACE2D25721EFA002CC268 /* MyPublicationsViewController.swift */,
 			);
 			path = Plumby;
 			sourceTree = "<group>";
@@ -406,9 +418,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006ACE2925721026002CC268 /* SignUpViewController.swift in Sources */,
 				C2B3D32825718D75008A8891 /* PublishViewController.swift in Sources */,
 				00990128255E5C7700C30354 /* AppDelegate.swift in Sources */,
 				0099012A255E5C7700C30354 /* SceneDelegate.swift in Sources */,
+				006ACE2425721017002CC268 /* LoginViewController.swift in Sources */,
+				006ACE1F25720E42002CC268 /* startControllerViewController.swift in Sources */,
+				006ACE2E25721EFA002CC268 /* MyPublicationsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

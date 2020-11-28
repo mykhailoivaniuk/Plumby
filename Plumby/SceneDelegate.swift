@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,14 +18,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
+//
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        //if PFUser.current() != nil {
-            let storyboard = UIStoryboard(name: "Main", bundle:  nil)
-            self.window = UIWindow(windowScene: windowScene)
-            self.window?.rootViewController = storyboard.instantiateViewController(identifier: "tabBarController")
-            self.window?.makeKeyAndVisible()
-        //}
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let tabBarController = main.instantiateViewController(identifier: "tabBarController")
+            window?.rootViewController = tabBarController
+        }
+//
+//        //if PFUser.current() != nil {
+//            let storyboard = UIStoryboard(name: "Main", bundle:  nil)
+//            self.window = UIWindow(windowScene: windowScene)
+//            self.window?.rootViewController = storyboard.instantiateViewController(identifier: "startController")
+//            self.window?.makeKeyAndVisible()
+//        //}
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
