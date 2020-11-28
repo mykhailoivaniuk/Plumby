@@ -25,29 +25,31 @@ Plumby - prototype of the app for the services that ordinary users can request f
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* Signup - will be one for both users and service providers
-* Professionals can post their services - post tab: bio info, services that can be provided with prices
-* Users can scroll down the feed with announcements
-* Users can leave reviews for the professional - after they requested the job
-* Users can see personal/contact information of the professional
-* Users can request this job (working as a like button)
-* Users can track requested jobs in tab with current request (also leave reviews there)
-* Professionals can see the history of of their postings - another feed 
-* Professionals contact users through user's personal information given in my publications view
+* [x] Signup - will be one for both users and service providers
+* [x] Users stay logged in across app restarts
+* [x] Professionals can post their services - post tab: bio info, services that can be provided with prices
+* [x] Professionals can discards all changes in the post tab.
+* [ ] Users can scroll down the feed with announcements
+* [ ] Users can leave reviews for the professional - after they requested the job
+* [ ] Users can see personal/contact information of the professional
+* [ ] Users can request this job (working as a like button)
+* [ ] Users can track requested jobs in tab with current request (also leave reviews there)
+* [ ] Professionals can see the history of of their postings - another feed 
+* [ ] Professionals contact users through user's personal information given in my publications view
 
 **Optional Nice-to-have Stories**
 
-* Users can filter for the jobs, prices, choose an area
-* Allow to edit one own's publications
-* Professionals can see the views by the users
-* Specific sign up for professionals and their other screen (login and logout)
-* Direct messaging of the user and the professional
-* Expand on bio - photos, choose from sections and types of work
-* Save to favorites openings and have the saved screen
-* Pay through the app 
-* Expand on the services offered - plumbing, carpeting, etc. 
-* Add profile section with account information
-* Add settings section with notification, my reviews for users
+* [ ] Users can filter for the jobs, prices, choose an area
+* [ ] Allow to edit one own's publications
+* [ ] Professionals can see the views by the users
+* [ ] Specific sign up for professionals and their other screen (login and logout)
+* [ ] Direct messaging of the user and the professional
+* [ ] Expand on bio - photos, choose from sections and types of work
+* [ ] Save to favorites openings and have the saved screen
+* [ ] Pay through the app 
+* [ ] Expand on the services offered - plumbing, carpeting, etc. 
+* [ ] Add profile section with account information
+* [ ] Add settings section with notification, my reviews for users
 
 ### 2. Screen Archetypes
 
@@ -248,7 +250,7 @@ Plumby - prototype of the app for the services that ordinary users can request f
     
     ### Create a Publication Screen:
       #### Coded by Thu
-    <img src="https://i.imgur.com/NI2HQRm.gif" width=600>
+    <img src="" width=600>
     
       ### Login and Signup Screen:
       #### Coded by Mykhailo
