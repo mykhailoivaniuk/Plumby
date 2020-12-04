@@ -54,6 +54,11 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
         publication["location"] = locationField.text!
         publication["rating"] = [Int]()
         publication["requests"] = [PFObject]() // an array of Request objects
+        
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(data: imageData!)
+        publication["image"] = file
+        
         publication.saveInBackground { (succeeded, error)  in
             if (succeeded) {
                 // The object has been saved.

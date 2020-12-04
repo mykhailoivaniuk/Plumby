@@ -21,6 +21,8 @@
 		136294D7D5834BFA77D874DB /* Pods_PlumbyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0AEC151B666ED609554CE8 /* Pods_PlumbyTests.framework */; };
 		40110EA7A19DED54AA890067 /* Pods_Plumby_PlumbyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDEF50AB0C6F9A55093EBF4 /* Pods_Plumby_PlumbyUITests.framework */; };
 		C2B3D32825718D75008A8891 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3D32725718D75008A8891 /* PublishViewController.swift */; };
+		C2B3D342257A7392008A8891 /* MyPublicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3D341257A7391008A8891 /* MyPublicationCell.swift */; };
+		C2B3D347257A91E4008A8891 /* MyPublicationSinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3D346257A91E4008A8891 /* MyPublicationSinglePostViewController.swift */; };
 		C5499A74516A7FCFCD972119 /* Pods_Plumby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961E6C68DFBA9D4F59DC6768 /* Pods_Plumby.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		B55C528D89194133F85A0337 /* Pods-Plumby-PlumbyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plumby-PlumbyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Plumby-PlumbyUITests/Pods-Plumby-PlumbyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8C5ED6C6E091CB53227B018 /* Pods-PlumbyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumbyTests.debug.xcconfig"; path = "Target Support Files/Pods-PlumbyTests/Pods-PlumbyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2B3D32725718D75008A8891 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
+		C2B3D341257A7391008A8891 /* MyPublicationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPublicationCell.swift; sourceTree = "<group>"; };
+		C2B3D346257A91E4008A8891 /* MyPublicationSinglePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPublicationSinglePostViewController.swift; sourceTree = "<group>"; };
 		CF9F69E9B190A6D7728214D1 /* Pods-Plumby-PlumbyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plumby-PlumbyUITests.release.xcconfig"; path = "Target Support Files/Pods-Plumby-PlumbyUITests/Pods-Plumby-PlumbyUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +131,7 @@
 				00990127255E5C7700C30354 /* AppDelegate.swift */,
 				00990129255E5C7700C30354 /* SceneDelegate.swift */,
 				0099012D255E5C7700C30354 /* Main.storyboard */,
+				C2B3D346257A91E4008A8891 /* MyPublicationSinglePostViewController.swift */,
 				C2B3D32725718D75008A8891 /* PublishViewController.swift */,
 				00990130255E5C7900C30354 /* Assets.xcassets */,
 				00990132255E5C7900C30354 /* LaunchScreen.storyboard */,
@@ -135,6 +140,7 @@
 				006ACE2325721017002CC268 /* LoginViewController.swift */,
 				006ACE2825721026002CC268 /* SignUpViewController.swift */,
 				006ACE2D25721EFA002CC268 /* MyPublicationsViewController.swift */,
+				C2B3D341257A7391008A8891 /* MyPublicationCell.swift */,
 			);
 			path = Plumby;
 			sourceTree = "<group>";
@@ -420,8 +426,10 @@
 			files = (
 				006ACE2925721026002CC268 /* SignUpViewController.swift in Sources */,
 				C2B3D32825718D75008A8891 /* PublishViewController.swift in Sources */,
+				C2B3D342257A7392008A8891 /* MyPublicationCell.swift in Sources */,
 				00990128255E5C7700C30354 /* AppDelegate.swift in Sources */,
 				0099012A255E5C7700C30354 /* SceneDelegate.swift in Sources */,
+				C2B3D347257A91E4008A8891 /* MyPublicationSinglePostViewController.swift in Sources */,
 				006ACE2425721017002CC268 /* LoginViewController.swift in Sources */,
 				006ACE1F25720E42002CC268 /* startControllerViewController.swift in Sources */,
 				006ACE2E25721EFA002CC268 /* MyPublicationsViewController.swift in Sources */,
