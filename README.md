@@ -263,5 +263,6 @@ Plumby - prototype of the app for the services that ordinary users can request f
      
        <img src="http://g.recordit.co/RikgI5L15M.gif" width=600>
   
+![ScreenShot](/Users/milanastetsenko/Desktop/Screen Shot 2020-12-04 at 4.27.04 PM.png)
 
 
