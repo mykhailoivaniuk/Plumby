@@ -255,5 +255,13 @@ Plumby - prototype of the app for the services that ordinary users can request f
       ### Login and Signup Screen:
       #### Coded by Mykhailo
     <img src="http://g.recordit.co/lbBiOFuLkr.gif" width=600>
+    
+    ## Update on The Project
+    ### Sprint 3
+     
+     Design element are completed, Logo is created, Icons  and Images are selected
+     
+       <img src="http://g.recordit.co/RikgI5L15M.gif" width=600>
+  
 
 
