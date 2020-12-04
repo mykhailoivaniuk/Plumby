@@ -66,9 +66,6 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
                 alert.addAction(UIAlertAction(title: "My Publications", style: .cancel, handler: { (action: UIAlertAction!) in
                     self.resetFields()
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "myPublicationsViewController") as! MyPublicationsViewController
-//                            self.present(newViewController, animated: true, completion: nil)
-//                    newViewController.modalPresentationStyle = .fullScreen
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "myPublicationsViewController") as! MyPublicationsViewController
                     self.navigationController?.pushViewController(newViewController, animated: true)
                 }))
