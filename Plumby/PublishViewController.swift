@@ -63,23 +63,27 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
         publication.saveInBackground { (succeeded, error)  in
             if (succeeded) {
                 // The object has been saved.
-                let alert = UIAlertController(title: "Publication posted!", message: "Do you want to stay or navigate to My Publications?", preferredStyle: UIAlertController.Style.alert)
+                let alert = UIAlertController(title: "Published!", message: "Do you want to stay or navigate to Publications tab?", preferredStyle: UIAlertController.Style.alert)
 
-                alert.addAction(UIAlertAction(title: "Stay", style: .default, handler: { (action: UIAlertAction!) in
-                    self.resetFields()
-                }))
-
-                alert.addAction(UIAlertAction(title: "My Publications", style: .cancel, handler: { (action: UIAlertAction!) in
+                alert.addAction(UIAlertAction(title: "Publications", style: .cancel, handler: { (action: UIAlertAction!) in
                     self.resetFields()
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "myPublicationsViewController") as! MyPublicationsViewController
                     self.navigationController?.pushViewController(newViewController, animated: true)
                 }))
+                
+                alert.addAction(UIAlertAction(title: "Stay", style: .default, handler: { (action: UIAlertAction!) in
+                    self.resetFields()
+                }))
 
                 self.present(alert, animated: true, completion: nil)
             } else {
                 // There was a problem, check error.description
-                print("Cannot save your publication: \(error?.localizedDescription)")
+                print("Cannot save publication: \(error?.localizedDescription)")
+                let alert = UIAlertController(title: "Sorry!", message: "An error occurred while we were trying to save your post.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { (action: UIAlertAction!) in
+                    // do nothing
+                }))
             }
         }
     }
