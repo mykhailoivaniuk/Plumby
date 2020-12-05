@@ -68,7 +68,12 @@ class EditPublicationViewController: UIViewController, UIImagePickerControllerDe
                 if success {
                     self.dismiss(animated: true, completion: nil)
                 } else {
-                    // todo: raise error alert
+                    // There was a problem, check error.description
+                    print("Cannot save changes: \(error?.localizedDescription)")
+                    let alert = UIAlertController(title: "Sorry!", message: "An error occurred while we were trying to save your changes.", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { (action: UIAlertAction!) in
+                        // do nothing
+                    }))
                 }
         }
     }
