@@ -104,14 +104,20 @@ class MyPublicationsViewController: UIViewController, UITableViewDelegate, UITab
         let avgStr: String = String(format: "%.1f", avg)
         return avgStr
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // find the selected row
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+        // pass the selected row to details view controller
+        let detailsViewController = segue.destination as! MyPublicationSinglePostViewController
+        detailsViewController.post = post
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
+    
 
 }
