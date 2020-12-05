@@ -52,7 +52,8 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
         publication["description"] = descriptionField.text!
         publication["title"] = titleField.text!
         publication["location"] = locationField.text!
-        publication["rating"] = [Int]()
+        publication["totalRatings"] = Float(0)
+        publication["numRatings"] = Float(0)
         publication["requests"] = [PFObject]() // an array of Request objects
         
         let imageData = imageView.image!.pngData()

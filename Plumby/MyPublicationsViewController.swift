@@ -46,7 +46,7 @@ class MyPublicationsViewController: UIViewController, UITableViewDelegate, UITab
     @objc func loadPosts() {
             
         let query = PFQuery(className: "Publications")
-        query.includeKeys(["objectId", "author", "image", "rating", "title"]).whereKey("author", equalTo: user)
+        query.includeKeys(["objectId", "author", "image", "totalRatings", "numRatings", "title"]).whereKey("author", equalTo: user)
         query.findObjectsInBackground{
             (posts, error) in
             if posts != nil {
@@ -79,7 +79,9 @@ class MyPublicationsViewController: UIViewController, UITableViewDelegate, UITab
         
         cell.nameLabel.text = user.username
         cell.summaryLabel.text = post["title"] as! String
-        cell.starLabel.text = getAverageStar(array: post["rating"] as! [Int])
+        cell.starLabel.text = getAverageStar(total: post["totalRatings"] as! Float, numReviews: post["numRatings"] as! Float)
+        
+        cell.countLabel.text = String(format: "(%.0f)", post["totalRatings"] as! Float)
         // set post's image
         if post["image"] != nil {
             let imageFile = post["image"] as! PFFileObject
@@ -94,15 +96,11 @@ class MyPublicationsViewController: UIViewController, UITableViewDelegate, UITab
         return cell
     }
     
-    func getAverageStar(array: [Int]) -> String{
-        if array.count == 0 {
+    func getAverageStar(total: Float, numReviews: Float) -> String{
+        if numReviews == 0 {
             return "No reviews"
         }
-        var sum:Float = 0
-        for num in array {
-            sum += Float(num)
-        }
-        let avg:Float = sum/Float(array.count)
+        let avg:Float = total/numReviews
         let avgStr: String = String(format: "%.1f", avg)
         return avgStr
     }
