@@ -259,7 +259,7 @@ Plumby - prototype of the app for the services that ordinary users can request f
     
     ### My Publications Screen:
       #### Coded by Thu
-      <img src="https://i.imgur.com/kD9dlH6.gif" width=600>
+      <img src="https://i.imgur.com/kD9dlH6.gif" width=600> <img src="https://i.imgur.com/ZFZvOMI.gif" width=600>
     
     ## Update on The Project
     ### Sprint 3
