@@ -63,9 +63,9 @@ class PublishViewController: UIViewController, UIImagePickerControllerDelegate, 
         publication.saveInBackground { (succeeded, error)  in
             if (succeeded) {
                 // The object has been saved.
-                let alert = UIAlertController(title: "Published!", message: "Do you want to stay or navigate to Publications tab?", preferredStyle: UIAlertController.Style.alert)
+                let alert = UIAlertController(title: "Published!", message: "Do you want to stay or navigate to My Services tab?", preferredStyle: UIAlertController.Style.alert)
 
-                alert.addAction(UIAlertAction(title: "Publications", style: .cancel, handler: { (action: UIAlertAction!) in
+                alert.addAction(UIAlertAction(title: "My services", style: .cancel, handler: { (action: UIAlertAction!) in
                     self.resetFields()
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "myPublicationsViewController") as! MyPublicationsViewController

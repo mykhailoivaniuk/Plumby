@@ -578,7 +578,7 @@
         <scene sceneID="lgg-a7-rH3">
             <objects>
                 <navigationController id="4Zg-lh-fuJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" id="0o7-Q7-KFs"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" id="0o7-Q7-KFs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="avR-gI-Faf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -610,11 +610,11 @@
             </objects>
             <point key="canvasLocation" x="-465" y="1492"/>
         </scene>
-        <!--Publications-->
+        <!--My Services-->
         <scene sceneID="GWs-pg-ck5">
             <objects>
                 <navigationController id="v6d-Dw-RBx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Publications" id="3o1-cS-XST"/>
+                    <tabBarItem key="tabBarItem" title="My Services" image="list.star" catalog="system" id="3o1-cS-XST"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mNQ-pE-Vyb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -631,7 +631,7 @@
         <scene sceneID="ang-7R-upY">
             <objects>
                 <navigationController id="SFN-Cx-KNf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Requested Jobs" id="Cy9-i9-qV3"/>
+                    <tabBarItem key="tabBarItem" title="Requested Jobs" image="wrench.and.screwdriver" catalog="system" id="Cy9-i9-qV3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NkC-uv-gIz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -971,7 +971,9 @@
         <image name="checkmark.square" catalog="system" width="128" height="114"/>
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="image_placeholder" width="375" height="375"/>
+        <image name="list.star" catalog="system" width="128" height="94"/>
         <image name="location.north.line.fill" catalog="system" width="82" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="noun_Gears_3624616" width="700" height="700"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
@@ -980,6 +982,7 @@
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="trash" catalog="system" width="121" height="128"/>
         <image name="trash.fill" catalog="system" width="121" height="128"/>
+        <image name="wrench.and.screwdriver" catalog="system" width="128" height="120"/>
         <image name="xmark.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
