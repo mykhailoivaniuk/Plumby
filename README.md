@@ -108,7 +108,8 @@ Plumby - prototype of the app for the services that ordinary users can request f
    | title	| String | Title/short summary for the job |
    | price         | Number     | to put on the job posting  |
    | location	| String	| where the author is located |
-   | rating       | Array of Numbers   | to calculate the average and put on the job posting |
+   | totalRatings       | Number   | keep track of total rating points |
+   | numRatings | Number | keep track of the number of ratings given |
    | description | String   | to explain what type of job is performed |
    | requests    | Array of Pointers to Requests   | to pull the requests |
    
