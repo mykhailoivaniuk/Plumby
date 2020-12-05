@@ -251,15 +251,15 @@ Plumby - prototype of the app for the services that ordinary users can request f
     
     ### Create a Publication Screen:
       #### Coded by Thu
-    <img src="https://i.imgur.com/NI2HQRm.gif" width=600>
+    <img src="https://i.imgur.com/NI2HQRm.gif" width=250>
     
     ### Login and Signup Screen:
       #### Coded by Mykhailo
-    <img src="http://g.recordit.co/lbBiOFuLkr.gif" width=600>
+    <img src="http://g.recordit.co/lbBiOFuLkr.gif" width=250>
     
     ### My Publications Screen:
       #### Coded by Thu
-      <img src="https://i.imgur.com/kD9dlH6.gif" width=600> <img src="https://i.imgur.com/ZFZvOMI.gif" width=600>
+      <img src="https://i.imgur.com/kD9dlH6.gif" width=250> <img src="https://i.imgur.com/ZFZvOMI.gif" width=250>
     
     ## Update on The Project
     ### Sprint 3
