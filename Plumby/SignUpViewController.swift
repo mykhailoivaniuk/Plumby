@@ -16,6 +16,15 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordTextFieldSU.attributedPlaceholder =
+            NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+        phoneTextField.attributedPlaceholder =
+            NSAttributedString(string: "8053053495", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+        usernameTextField.attributedPlaceholder =
+            NSAttributedString(string: "Username", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+        emailTextField.attributedPlaceholder =
+            NSAttributedString(string: "your_email@mail.com", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+        
 
         // Do any additional setup after loading the view.
     }
