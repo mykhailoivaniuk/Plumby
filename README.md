@@ -271,3 +271,12 @@ Plumby - prototype of the app for the services that ordinary users can request f
 <img width="950" alt="image" src="https://user-images.githubusercontent.com/65287937/101188606-da6eac80-364d-11eb-8e31-daec89d3bca9.png">
 
 
+  ## Update on The Project
+    ### Sprint 4
+     
+    Design features are implemented, all but one screens are built. 
+     
+       <img src="http://g.recordit.co/NLmh1eGjsO.gif" width=600>
+  
+
+
