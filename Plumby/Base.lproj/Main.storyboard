@@ -881,7 +881,7 @@
                                 <rect key="frame" x="34" y="480" width="346" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mbW-8O-8q0"/>
@@ -964,8 +964,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="d8S-Bq-QdM"/>
-        <segue reference="il9-uW-BBK"/>
+        <segue reference="HsX-PO-OeO"/>
+        <segue reference="7i9-lR-sbw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="checkmark.square" catalog="system" width="128" height="114"/>

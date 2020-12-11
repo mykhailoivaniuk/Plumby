@@ -21,13 +21,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        if PFUser.current() != nil {
-            let main = UIStoryboard(name: "Main", bundle: nil)
-            let tabBarController = main.instantiateViewController(identifier: "tabBarController")
-            window?.rootViewController = tabBarController
-        }
-//
 //        if PFUser.current() != nil {
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let tabBarController = main.instantiateViewController(identifier: "tabBarController")
+//            window?.rootViewController = tabBarController
+//        }
+        
+//        //if PFUser.current() != nil {
 //            let storyboard = UIStoryboard(name: "Main", bundle:  nil)
 //            self.window = UIWindow(windowScene: windowScene)
 //            self.window?.rootViewController = storyboard.instantiateViewController(identifier: "startController")
