@@ -67,12 +67,13 @@ class SignUpViewController: UIViewController {
         user.username = usernameTextField.text
         user.password = passwordTextFieldSU.text
         user.email = emailTextField.text
-        user["phone"] = phoneTextField.text!
+        user["phone"] = phoneTextField.text
 
         user.signUpInBackground { (success, error) in
             if success {
                 self.performSegue(withIdentifier: "signUpSegue", sender: nil)
-                print("User phone is : \(user["phone"])")
+                print("User phone in label.text : \(self.phoneTextField.text)")
+                print("User phone in user['phone'] : \(user["phone"])")
             }
             else {
                 print("Error: \(error?.localizedDescription)")

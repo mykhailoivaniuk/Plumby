@@ -8,13 +8,21 @@ PODS:
     - Parse/Core (= 1.19.1)
   - Parse/Core (1.19.1):
     - Bolts/Tasks (= 1.9.1)
+<<<<<<< HEAD
   - SwiftyGif (5.3.0)
+=======
+  - VegaScrollFlowLayout (1.1)
+>>>>>>> GeneralFeedView
 
 DEPENDENCIES:
   - AlamofireImage
   - IQKeyboardManagerSwift
   - Parse
+<<<<<<< HEAD
   - SwiftyGif
+=======
+  - VegaScrollFlowLayout
+>>>>>>> GeneralFeedView
 
 SPEC REPOS:
   trunk:
@@ -23,7 +31,11 @@ SPEC REPOS:
     - Bolts
     - IQKeyboardManagerSwift
     - Parse
+<<<<<<< HEAD
     - SwiftyGif
+=======
+    - VegaScrollFlowLayout
+>>>>>>> GeneralFeedView
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
@@ -31,8 +43,14 @@ SPEC CHECKSUMS:
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
+<<<<<<< HEAD
   SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
 
 PODFILE CHECKSUM: d0ef3dda9133470ca880db1e9c7ca2aed5931d59
+=======
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
+
+PODFILE CHECKSUM: d512445c17c4f202b01809673242f1b72fa5d1bd
+>>>>>>> GeneralFeedView
 
 COCOAPODS: 1.9.3

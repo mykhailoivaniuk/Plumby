@@ -11,6 +11,11 @@
 		006ACE2425721017002CC268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2325721017002CC268 /* LoginViewController.swift */; };
 		006ACE2925721026002CC268 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2825721026002CC268 /* SignUpViewController.swift */; };
 		006ACE2E25721EFA002CC268 /* MyPublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2D25721EFA002CC268 /* MyPublicationsViewController.swift */; };
+		008F8DAE2583EB56006D54CE /* GeneralFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DAD2583EB56006D54CE /* GeneralFeedViewController.swift */; };
+		008F8DC325841730006D54CE /* GeneralFeed1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DC225841730006D54CE /* GeneralFeed1Cell.swift */; };
+		008F8DE22584CB9A006D54CE /* MyRequests1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DE12584CB9A006D54CE /* MyRequests1TableViewCell.swift */; };
+		008F8DF22584F062006D54CE /* MyRequests2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DF12584F062006D54CE /* MyRequests2ViewController.swift */; };
+		008F8E002584FCCD006D54CE /* 2gears.gif in Resources */ = {isa = PBXBuildFile; fileRef = 008F8DFF2584FCCD006D54CE /* 2gears.gif */; };
 		00990128255E5C7700C30354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990127255E5C7700C30354 /* AppDelegate.swift */; };
 		0099012A255E5C7700C30354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990129255E5C7700C30354 /* SceneDelegate.swift */; };
 		0099012F255E5C7700C30354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0099012D255E5C7700C30354 /* Main.storyboard */; };
@@ -20,7 +25,6 @@
 		0099014A255E5C7A00C30354 /* PlumbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990149255E5C7A00C30354 /* PlumbyUITests.swift */; };
 		136294D7D5834BFA77D874DB /* Pods_PlumbyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0AEC151B666ED609554CE8 /* Pods_PlumbyTests.framework */; };
 		40110EA7A19DED54AA890067 /* Pods_Plumby_PlumbyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDEF50AB0C6F9A55093EBF4 /* Pods_Plumby_PlumbyUITests.framework */; };
-		862233AC2583E19C00CEA61A /* 2gears.gif in Resources */ = {isa = PBXBuildFile; fileRef = 862233AB2583E19C00CEA61A /* 2gears.gif */; };
 		8682E8942583F1F30036E241 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8682E88C2583F1F30036E241 /* SIL Open Font License.txt */; };
 		8682E8952583F1F30036E241 /* Dosis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E88D2583F1F30036E241 /* Dosis-Regular.otf */; };
 		8682E8962583F1F30036E241 /* Dosis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E88E2583F1F30036E241 /* Dosis-Light.otf */; };
@@ -58,6 +62,11 @@
 		006ACE2325721017002CC268 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		006ACE2825721026002CC268 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		006ACE2D25721EFA002CC268 /* MyPublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPublicationsViewController.swift; sourceTree = "<group>"; };
+		008F8DAD2583EB56006D54CE /* GeneralFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFeedViewController.swift; sourceTree = "<group>"; };
+		008F8DC225841730006D54CE /* GeneralFeed1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFeed1Cell.swift; sourceTree = "<group>"; };
+		008F8DE12584CB9A006D54CE /* MyRequests1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequests1TableViewCell.swift; sourceTree = "<group>"; };
+		008F8DF12584F062006D54CE /* MyRequests2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequests2ViewController.swift; sourceTree = "<group>"; };
+		008F8DFF2584FCCD006D54CE /* 2gears.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 2gears.gif; path = ../../../Downloads/2gears.gif; sourceTree = "<group>"; };
 		00990124255E5C7700C30354 /* Plumby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plumby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00990127255E5C7700C30354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00990129255E5C7700C30354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +83,6 @@
 		243E9FD9C313200802970EC1 /* Pods-Plumby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plumby.debug.xcconfig"; path = "Target Support Files/Pods-Plumby/Pods-Plumby.debug.xcconfig"; sourceTree = "<group>"; };
 		2AC11FF11BB6C38A2FC6F64F /* Pods-PlumbyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumbyTests.release.xcconfig"; path = "Target Support Files/Pods-PlumbyTests/Pods-PlumbyTests.release.xcconfig"; sourceTree = "<group>"; };
 		45D030292A2E9C5E135F8DA1 /* Pods-Plumby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plumby.release.xcconfig"; path = "Target Support Files/Pods-Plumby/Pods-Plumby.release.xcconfig"; sourceTree = "<group>"; };
-		862233AB2583E19C00CEA61A /* 2gears.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 2gears.gif; path = ../../../../../Desktop/2gears.gif; sourceTree = "<group>"; };
 		8682E88C2583F1F30036E241 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 		8682E88D2583F1F30036E241 /* Dosis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.otf"; sourceTree = "<group>"; };
 		8682E88E2583F1F30036E241 /* Dosis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.otf"; sourceTree = "<group>"; };
@@ -151,7 +159,7 @@
 				00990127255E5C7700C30354 /* AppDelegate.swift */,
 				00990129255E5C7700C30354 /* SceneDelegate.swift */,
 				0099012D255E5C7700C30354 /* Main.storyboard */,
-				862233AB2583E19C00CEA61A /* 2gears.gif */,
+				008F8DFF2584FCCD006D54CE /* 2gears.gif */,
 				C2B3D32725718D75008A8891 /* PublishViewController.swift */,
 				8682E88B2583F1F30036E241 /* dosis */,
 				00990130255E5C7900C30354 /* Assets.xcassets */,
@@ -164,6 +172,10 @@
 				C2B3D346257A91E4008A8891 /* MyPublicationSinglePostViewController.swift */,
 				C21B3F06257BD46C00212673 /* EditPublicationViewController.swift */,
 				C2B3D341257A7391008A8891 /* MyPublicationCell.swift */,
+				008F8DAD2583EB56006D54CE /* GeneralFeedViewController.swift */,
+				008F8DC225841730006D54CE /* GeneralFeed1Cell.swift */,
+				008F8DE12584CB9A006D54CE /* MyRequests1TableViewCell.swift */,
+				008F8DF12584F062006D54CE /* MyRequests2ViewController.swift */,
 			);
 			path = Plumby;
 			sourceTree = "<group>";
@@ -339,8 +351,8 @@
 				00990131255E5C7900C30354 /* Assets.xcassets in Resources */,
 				8682E89B2583F1F30036E241 /* Dosis-Bold.otf in Resources */,
 				0099012F255E5C7700C30354 /* Main.storyboard in Resources */,
+				008F8E002584FCCD006D54CE /* 2gears.gif in Resources */,
 				8682E8962583F1F30036E241 /* Dosis-Light.otf in Resources */,
-				862233AC2583E19C00CEA61A /* 2gears.gif in Resources */,
 				8682E8982583F1F30036E241 /* Dosis-ExtraLight.otf in Resources */,
 				8682E8992583F1F30036E241 /* Dosis-ExtraBold.otf in Resources */,
 				8682E8972583F1F30036E241 /* Dosis-Medium.otf in Resources */,
@@ -471,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008F8DC325841730006D54CE /* GeneralFeed1Cell.swift in Sources */,
 				006ACE2925721026002CC268 /* SignUpViewController.swift in Sources */,
 				C2B3D32825718D75008A8891 /* PublishViewController.swift in Sources */,
 				C2B3D342257A7392008A8891 /* MyPublicationCell.swift in Sources */,
@@ -478,9 +491,12 @@
 				0099012A255E5C7700C30354 /* SceneDelegate.swift in Sources */,
 				C2B3D347257A91E4008A8891 /* MyPublicationSinglePostViewController.swift in Sources */,
 				006ACE2425721017002CC268 /* LoginViewController.swift in Sources */,
+				008F8DAE2583EB56006D54CE /* GeneralFeedViewController.swift in Sources */,
 				C21B3F07257BD46C00212673 /* EditPublicationViewController.swift in Sources */,
 				006ACE1F25720E42002CC268 /* startControllerViewController.swift in Sources */,
 				006ACE2E25721EFA002CC268 /* MyPublicationsViewController.swift in Sources */,
+				008F8DE22584CB9A006D54CE /* MyRequests1TableViewCell.swift in Sources */,
+				008F8DF22584F062006D54CE /* MyRequests2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
