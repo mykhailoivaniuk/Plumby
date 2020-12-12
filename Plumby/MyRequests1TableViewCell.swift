@@ -8,7 +8,12 @@
 import UIKit
 
 class MyRequests1TableViewCell: UITableViewCell {
-
+    @IBOutlet weak var postImage: UIImageView!
+    
+    @IBOutlet weak var numOfRatings: UILabel!
+    @IBOutlet weak var averageRatingLabel: UILabel!
+    @IBOutlet weak var taskTitleLabel: UILabel!
+    @IBOutlet weak var taskerNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

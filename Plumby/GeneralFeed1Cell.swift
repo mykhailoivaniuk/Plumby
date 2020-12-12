@@ -8,7 +8,15 @@
 import UIKit
 
 class GeneralFeed1Cell: UITableViewCell {
-
+    @IBOutlet weak var postAuthor: UILabel!
+    @IBOutlet weak var Location: UILabel!
+    @IBOutlet weak var postPicture: UIImageView!
+    
+    @IBOutlet weak var numberOfRatings: UILabel!
+    @IBOutlet weak var ratingAverage: UILabel!
+    @IBOutlet weak var postDescription: UILabel!
+    @IBOutlet weak var postTitleLabel: UILabel!
+    @IBOutlet weak var pricePH: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

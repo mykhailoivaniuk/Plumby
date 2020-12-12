@@ -8,11 +8,13 @@ PODS:
     - Parse/Core (= 1.19.1)
   - Parse/Core (1.19.1):
     - Bolts/Tasks (= 1.9.1)
+  - VegaScrollFlowLayout (1.1)
 
 DEPENDENCIES:
   - AlamofireImage
   - IQKeyboardManagerSwift
   - Parse
+  - VegaScrollFlowLayout
 
 SPEC REPOS:
   trunk:
@@ -21,6 +23,7 @@ SPEC REPOS:
     - Bolts
     - IQKeyboardManagerSwift
     - Parse
+    - VegaScrollFlowLayout
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
@@ -28,7 +31,8 @@ SPEC CHECKSUMS:
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
 
-PODFILE CHECKSUM: 06ef7f8ed985007ea772c455f239927de2fe1ad8
+PODFILE CHECKSUM: d512445c17c4f202b01809673242f1b72fa5d1bd
 
 COCOAPODS: 1.9.3

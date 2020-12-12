@@ -11,6 +11,10 @@
 		006ACE2425721017002CC268 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2325721017002CC268 /* LoginViewController.swift */; };
 		006ACE2925721026002CC268 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2825721026002CC268 /* SignUpViewController.swift */; };
 		006ACE2E25721EFA002CC268 /* MyPublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006ACE2D25721EFA002CC268 /* MyPublicationsViewController.swift */; };
+		008F8DAE2583EB56006D54CE /* GeneralFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DAD2583EB56006D54CE /* GeneralFeedViewController.swift */; };
+		008F8DC325841730006D54CE /* GeneralFeed1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DC225841730006D54CE /* GeneralFeed1Cell.swift */; };
+		008F8DE22584CB9A006D54CE /* MyRequests1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DE12584CB9A006D54CE /* MyRequests1TableViewCell.swift */; };
+		008F8DF22584F062006D54CE /* MyRequests2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DF12584F062006D54CE /* MyRequests2ViewController.swift */; };
 		00990128255E5C7700C30354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990127255E5C7700C30354 /* AppDelegate.swift */; };
 		0099012A255E5C7700C30354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990129255E5C7700C30354 /* SceneDelegate.swift */; };
 		0099012F255E5C7700C30354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0099012D255E5C7700C30354 /* Main.storyboard */; };
@@ -49,6 +53,10 @@
 		006ACE2325721017002CC268 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		006ACE2825721026002CC268 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		006ACE2D25721EFA002CC268 /* MyPublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPublicationsViewController.swift; sourceTree = "<group>"; };
+		008F8DAD2583EB56006D54CE /* GeneralFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFeedViewController.swift; sourceTree = "<group>"; };
+		008F8DC225841730006D54CE /* GeneralFeed1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFeed1Cell.swift; sourceTree = "<group>"; };
+		008F8DE12584CB9A006D54CE /* MyRequests1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequests1TableViewCell.swift; sourceTree = "<group>"; };
+		008F8DF12584F062006D54CE /* MyRequests2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequests2ViewController.swift; sourceTree = "<group>"; };
 		00990124255E5C7700C30354 /* Plumby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plumby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00990127255E5C7700C30354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00990129255E5C7700C30354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +152,10 @@
 				C2B3D346257A91E4008A8891 /* MyPublicationSinglePostViewController.swift */,
 				C21B3F06257BD46C00212673 /* EditPublicationViewController.swift */,
 				C2B3D341257A7391008A8891 /* MyPublicationCell.swift */,
+				008F8DAD2583EB56006D54CE /* GeneralFeedViewController.swift */,
+				008F8DC225841730006D54CE /* GeneralFeed1Cell.swift */,
+				008F8DE12584CB9A006D54CE /* MyRequests1TableViewCell.swift */,
+				008F8DF12584F062006D54CE /* MyRequests2ViewController.swift */,
 			);
 			path = Plumby;
 			sourceTree = "<group>";
@@ -427,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008F8DC325841730006D54CE /* GeneralFeed1Cell.swift in Sources */,
 				006ACE2925721026002CC268 /* SignUpViewController.swift in Sources */,
 				C2B3D32825718D75008A8891 /* PublishViewController.swift in Sources */,
 				C2B3D342257A7392008A8891 /* MyPublicationCell.swift in Sources */,
@@ -434,9 +447,12 @@
 				0099012A255E5C7700C30354 /* SceneDelegate.swift in Sources */,
 				C2B3D347257A91E4008A8891 /* MyPublicationSinglePostViewController.swift in Sources */,
 				006ACE2425721017002CC268 /* LoginViewController.swift in Sources */,
+				008F8DAE2583EB56006D54CE /* GeneralFeedViewController.swift in Sources */,
 				C21B3F07257BD46C00212673 /* EditPublicationViewController.swift in Sources */,
 				006ACE1F25720E42002CC268 /* startControllerViewController.swift in Sources */,
 				006ACE2E25721EFA002CC268 /* MyPublicationsViewController.swift in Sources */,
+				008F8DE22584CB9A006D54CE /* MyRequests1TableViewCell.swift in Sources */,
+				008F8DF22584F062006D54CE /* MyRequests2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
