@@ -8,7 +8,6 @@ target 'Plumby' do
   pod 'AlamofireImage'
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftyGif'
-  pod 'VegaScrollFlowLayout'
 
 
   # Pods for Plumby

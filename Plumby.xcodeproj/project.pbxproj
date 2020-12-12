@@ -15,7 +15,7 @@
 		008F8DC325841730006D54CE /* GeneralFeed1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DC225841730006D54CE /* GeneralFeed1Cell.swift */; };
 		008F8DE22584CB9A006D54CE /* MyRequests1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DE12584CB9A006D54CE /* MyRequests1TableViewCell.swift */; };
 		008F8DF22584F062006D54CE /* MyRequests2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008F8DF12584F062006D54CE /* MyRequests2ViewController.swift */; };
-		008F8E002584FCCD006D54CE /* 2gears.gif in Resources */ = {isa = PBXBuildFile; fileRef = 008F8DFF2584FCCD006D54CE /* 2gears.gif */; };
+		008F8E082584FDEB006D54CE /* 2gears.gif in Resources */ = {isa = PBXBuildFile; fileRef = 008F8E072584FDEB006D54CE /* 2gears.gif */; };
 		00990128255E5C7700C30354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990127255E5C7700C30354 /* AppDelegate.swift */; };
 		0099012A255E5C7700C30354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990129255E5C7700C30354 /* SceneDelegate.swift */; };
 		0099012F255E5C7700C30354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0099012D255E5C7700C30354 /* Main.storyboard */; };
@@ -66,7 +66,7 @@
 		008F8DC225841730006D54CE /* GeneralFeed1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFeed1Cell.swift; sourceTree = "<group>"; };
 		008F8DE12584CB9A006D54CE /* MyRequests1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequests1TableViewCell.swift; sourceTree = "<group>"; };
 		008F8DF12584F062006D54CE /* MyRequests2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRequests2ViewController.swift; sourceTree = "<group>"; };
-		008F8DFF2584FCCD006D54CE /* 2gears.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 2gears.gif; path = ../../../Downloads/2gears.gif; sourceTree = "<group>"; };
+		008F8E072584FDEB006D54CE /* 2gears.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2gears.gif; sourceTree = "<group>"; };
 		00990124255E5C7700C30354 /* Plumby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plumby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00990127255E5C7700C30354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00990129255E5C7700C30354 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 				00990127255E5C7700C30354 /* AppDelegate.swift */,
 				00990129255E5C7700C30354 /* SceneDelegate.swift */,
 				0099012D255E5C7700C30354 /* Main.storyboard */,
-				008F8DFF2584FCCD006D54CE /* 2gears.gif */,
+				008F8E072584FDEB006D54CE /* 2gears.gif */,
 				C2B3D32725718D75008A8891 /* PublishViewController.swift */,
 				8682E88B2583F1F30036E241 /* dosis */,
 				00990130255E5C7900C30354 /* Assets.xcassets */,
@@ -351,7 +351,7 @@
 				00990131255E5C7900C30354 /* Assets.xcassets in Resources */,
 				8682E89B2583F1F30036E241 /* Dosis-Bold.otf in Resources */,
 				0099012F255E5C7700C30354 /* Main.storyboard in Resources */,
-				008F8E002584FCCD006D54CE /* 2gears.gif in Resources */,
+				008F8E082584FDEB006D54CE /* 2gears.gif in Resources */,
 				8682E8962583F1F30036E241 /* Dosis-Light.otf in Resources */,
 				8682E8982583F1F30036E241 /* Dosis-ExtraLight.otf in Resources */,
 				8682E8992583F1F30036E241 /* Dosis-ExtraBold.otf in Resources */,
