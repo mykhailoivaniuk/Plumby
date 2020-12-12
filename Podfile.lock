@@ -8,11 +8,13 @@ PODS:
     - Parse/Core (= 1.19.1)
   - Parse/Core (1.19.1):
     - Bolts/Tasks (= 1.9.1)
+  - SwiftyGif (5.3.0)
 
 DEPENDENCIES:
   - AlamofireImage
   - IQKeyboardManagerSwift
   - Parse
+  - SwiftyGif
 
 SPEC REPOS:
   trunk:
@@ -21,6 +23,7 @@ SPEC REPOS:
     - Bolts
     - IQKeyboardManagerSwift
     - Parse
+    - SwiftyGif
 
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
@@ -28,7 +31,8 @@ SPEC CHECKSUMS:
   Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Parse: e40fdb9c7d665823b7fe9865949cac9a53eb2ce7
+  SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
 
-PODFILE CHECKSUM: 06ef7f8ed985007ea772c455f239927de2fe1ad8
+PODFILE CHECKSUM: d0ef3dda9133470ca880db1e9c7ca2aed5931d59
 
 COCOAPODS: 1.9.3

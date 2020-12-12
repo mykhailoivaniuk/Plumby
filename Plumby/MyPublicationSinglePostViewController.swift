@@ -14,6 +14,7 @@ class MyPublicationSinglePostViewController: UIViewController {
     var post : PFObject!
     var user = PFUser.current()!
     
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var starLabel: UILabel!
@@ -52,6 +53,7 @@ class MyPublicationSinglePostViewController: UIViewController {
         authorLabel.text = user.username
         locLabel.text = post["location"] as! String
         descLabel.text = post["description"] as! String
+        priceLabel.text = post["price"] as! String
         
     }
     

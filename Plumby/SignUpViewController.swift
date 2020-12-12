@@ -8,14 +8,33 @@
 import UIKit
 import Parse
 
-class SignUpViewController: UIViewController {
 
+extension UIView {
+    func setBorder(width: CGFloat, color: UIColor) {
+        layer.borderColor = color.cgColor
+        layer.borderWidth = width
+    }
+}
+extension UIView {
+  func setCorner(radius: CGFloat) {
+        layer.cornerRadius = radius
+        clipsToBounds = true
+    }
+}
+
+
+class SignUpViewController: UIViewController {
+    @IBOutlet weak var GearsLogo: UIImageView!
+    
     @IBOutlet weak var passwordTextFieldSU: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let gif = try! UIImage(gifName: "2gears.gif")
+        self.GearsLogo.setGifImage(gif, loopCount: -1) // Will loop forever
         passwordTextFieldSU.attributedPlaceholder =
             NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
         phoneTextField.attributedPlaceholder =
@@ -24,6 +43,19 @@ class SignUpViewController: UIViewController {
             NSAttributedString(string: "Username", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
         emailTextField.attributedPlaceholder =
             NSAttributedString(string: "your_email@mail.com", attributes: [NSAttributedString.Key.foregroundColor : UIColor.lightGray])
+        
+        
+        passwordTextFieldSU.setBorder(width: 1, color: UIColor.systemGray)
+        passwordTextFieldSU.setCorner(radius: 15)
+        
+        phoneTextField.setBorder(width: 1, color: UIColor.systemGray)
+        phoneTextField.setCorner(radius: 15)
+        
+        usernameTextField.setBorder(width: 1, color: UIColor.systemGray)
+        usernameTextField.setCorner(radius: 15)
+        
+        emailTextField.setBorder(width: 1, color: UIColor.systemGray)
+        emailTextField.setCorner(radius: 15)
         
 
         // Do any additional setup after loading the view.

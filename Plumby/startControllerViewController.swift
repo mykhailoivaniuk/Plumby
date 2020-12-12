@@ -8,10 +8,12 @@
 import UIKit
 
 class startControllerViewController: UIViewController {
-
+    @IBOutlet weak var LogoGif: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let gif = try! UIImage(gifName: "2gears.gif")
+        self.LogoGif.setGifImage(gif, loopCount: -1) // Will loop forever
         // Do any additional setup after loading the view.
     }
     

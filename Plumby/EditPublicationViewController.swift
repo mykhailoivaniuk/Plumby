@@ -8,6 +8,18 @@
 import UIKit
 import Parse
 import AlamofireImage
+extension UIView {
+    func setBorder2(width: CGFloat, color: UIColor) {
+        layer.borderColor = color.cgColor
+        layer.borderWidth = width
+    }
+}
+extension UIView {
+  func setCorner2(radius: CGFloat) {
+        layer.cornerRadius = radius
+        clipsToBounds = true
+    }
+}
 
 class EditPublicationViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -23,6 +35,20 @@ class EditPublicationViewController: UIViewController, UIImagePickerControllerDe
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         loadInfo()
+        titleField.setBorder(width: 1, color: UIColor.systemGray)
+        titleField.setCorner(radius: 15)
+        
+        locField.setBorder(width: 1, color: UIColor.systemGray)
+        locField.setCorner(radius: 15)
+        
+        priceField.setBorder(width: 1, color: UIColor.systemGray)
+        priceField.setCorner(radius: 15)
+        
+        descField.setBorder(width: 1, color: UIColor.systemGray)
+        descField.setCorner(radius: 15)
+        
+        
+        
     }
     
     func loadInfo() {
@@ -39,7 +65,7 @@ class EditPublicationViewController: UIViewController, UIImagePickerControllerDe
         priceField.text = post["price"] as! String
     }
     
-    @IBAction func onCancel(_ sender: Any) {
+    @IBAction func onCancel2(_ sender: Any) {
         let alert = UIAlertController(title: "Discard Changes", message: "All changes will be discarded.", preferredStyle: UIAlertController.Style.alert)
 
         alert.addAction(UIAlertAction(title: "Keep Editing", style: .default, handler: { (action: UIAlertAction!) in
@@ -53,8 +79,22 @@ class EditPublicationViewController: UIViewController, UIImagePickerControllerDe
         present(alert, animated: true, completion: nil)
         
     }
+//    @IBAction func onCancel(_ sender: Any) {
+//        let alert = UIAlertController(title: "Discard Changes", message: "All changes will be discarded.", preferredStyle: UIAlertController.Style.alert)
+//
+//        alert.addAction(UIAlertAction(title: "Keep Editing", style: .default, handler: { (action: UIAlertAction!) in
+//            // do nothing
+//        }))
+//
+//        alert.addAction(UIAlertAction(title: "Discard", style: .cancel, handler: { (action: UIAlertAction!) in
+//            self.dismiss(animated: true, completion: nil)
+//        }))
+//
+//        present(alert, animated: true, completion: nil)
+//
+//    }
     
-    @IBAction func onSubmit(_ sender: Any) {
+    @IBAction func onSubmit2(_ sender: Any) {
         post["title"] = titleField.text!
         post["location"] = locField.text!
         post["description"] = descField.text!
@@ -77,6 +117,30 @@ class EditPublicationViewController: UIViewController, UIImagePickerControllerDe
                 }
         }
     }
+    
+//    @IBAction func onSubmit(_ sender: Any) {
+//        post["title"] = titleField.text!
+//        post["location"] = locField.text!
+//        post["description"] = descField.text!
+//        post["price"] = priceField.text!
+//        
+//        let imageData = imageView.image!.pngData()
+//        let file = PFFileObject(data: imageData!)
+//        post["image"] = file
+//        post.saveInBackground{
+//            (success, error) in
+//                if success {
+//                    self.dismiss(animated: true, completion: nil)
+//                } else {
+//                    // There was a problem, check error.description
+//                    print("Cannot save changes: \(error?.localizedDescription)")
+//                    let alert = UIAlertController(title: "Sorry!", message: "An error occurred while we were trying to save your changes.", preferredStyle: UIAlertController.Style.alert)
+//                    alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { (action: UIAlertAction!) in
+//                        // do nothing
+//                    }))
+//                }
+//        }
+//    }
     
     @IBAction func onCamera(_ sender: Any) {
         let picker = UIImagePickerController()

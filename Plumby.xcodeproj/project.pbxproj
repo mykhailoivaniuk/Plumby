@@ -20,6 +20,15 @@
 		0099014A255E5C7A00C30354 /* PlumbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00990149255E5C7A00C30354 /* PlumbyUITests.swift */; };
 		136294D7D5834BFA77D874DB /* Pods_PlumbyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0AEC151B666ED609554CE8 /* Pods_PlumbyTests.framework */; };
 		40110EA7A19DED54AA890067 /* Pods_Plumby_PlumbyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDEF50AB0C6F9A55093EBF4 /* Pods_Plumby_PlumbyUITests.framework */; };
+		862233AC2583E19C00CEA61A /* 2gears.gif in Resources */ = {isa = PBXBuildFile; fileRef = 862233AB2583E19C00CEA61A /* 2gears.gif */; };
+		8682E8942583F1F30036E241 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8682E88C2583F1F30036E241 /* SIL Open Font License.txt */; };
+		8682E8952583F1F30036E241 /* Dosis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E88D2583F1F30036E241 /* Dosis-Regular.otf */; };
+		8682E8962583F1F30036E241 /* Dosis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E88E2583F1F30036E241 /* Dosis-Light.otf */; };
+		8682E8972583F1F30036E241 /* Dosis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E88F2583F1F30036E241 /* Dosis-Medium.otf */; };
+		8682E8982583F1F30036E241 /* Dosis-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E8902583F1F30036E241 /* Dosis-ExtraLight.otf */; };
+		8682E8992583F1F30036E241 /* Dosis-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E8912583F1F30036E241 /* Dosis-ExtraBold.otf */; };
+		8682E89A2583F1F30036E241 /* Dosis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E8922583F1F30036E241 /* Dosis-SemiBold.otf */; };
+		8682E89B2583F1F30036E241 /* Dosis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8682E8932583F1F30036E241 /* Dosis-Bold.otf */; };
 		C21B3F07257BD46C00212673 /* EditPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B3F06257BD46C00212673 /* EditPublicationViewController.swift */; };
 		C2B3D32825718D75008A8891 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3D32725718D75008A8891 /* PublishViewController.swift */; };
 		C2B3D342257A7392008A8891 /* MyPublicationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3D341257A7391008A8891 /* MyPublicationCell.swift */; };
@@ -65,6 +74,15 @@
 		243E9FD9C313200802970EC1 /* Pods-Plumby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plumby.debug.xcconfig"; path = "Target Support Files/Pods-Plumby/Pods-Plumby.debug.xcconfig"; sourceTree = "<group>"; };
 		2AC11FF11BB6C38A2FC6F64F /* Pods-PlumbyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlumbyTests.release.xcconfig"; path = "Target Support Files/Pods-PlumbyTests/Pods-PlumbyTests.release.xcconfig"; sourceTree = "<group>"; };
 		45D030292A2E9C5E135F8DA1 /* Pods-Plumby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plumby.release.xcconfig"; path = "Target Support Files/Pods-Plumby/Pods-Plumby.release.xcconfig"; sourceTree = "<group>"; };
+		862233AB2583E19C00CEA61A /* 2gears.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = 2gears.gif; path = ../../../../../Desktop/2gears.gif; sourceTree = "<group>"; };
+		8682E88C2583F1F30036E241 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		8682E88D2583F1F30036E241 /* Dosis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.otf"; sourceTree = "<group>"; };
+		8682E88E2583F1F30036E241 /* Dosis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.otf"; sourceTree = "<group>"; };
+		8682E88F2583F1F30036E241 /* Dosis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Medium.otf"; sourceTree = "<group>"; };
+		8682E8902583F1F30036E241 /* Dosis-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraLight.otf"; sourceTree = "<group>"; };
+		8682E8912583F1F30036E241 /* Dosis-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraBold.otf"; sourceTree = "<group>"; };
+		8682E8922583F1F30036E241 /* Dosis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.otf"; sourceTree = "<group>"; };
+		8682E8932583F1F30036E241 /* Dosis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.otf"; sourceTree = "<group>"; };
 		961E6C68DFBA9D4F59DC6768 /* Pods_Plumby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plumby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0AEC151B666ED609554CE8 /* Pods_PlumbyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlumbyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDEF50AB0C6F9A55093EBF4 /* Pods_Plumby_PlumbyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plumby_PlumbyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +151,9 @@
 				00990127255E5C7700C30354 /* AppDelegate.swift */,
 				00990129255E5C7700C30354 /* SceneDelegate.swift */,
 				0099012D255E5C7700C30354 /* Main.storyboard */,
+				862233AB2583E19C00CEA61A /* 2gears.gif */,
 				C2B3D32725718D75008A8891 /* PublishViewController.swift */,
+				8682E88B2583F1F30036E241 /* dosis */,
 				00990130255E5C7900C30354 /* Assets.xcassets */,
 				00990132255E5C7900C30354 /* LaunchScreen.storyboard */,
 				00990135255E5C7900C30354 /* Info.plist */,
@@ -174,6 +194,21 @@
 				9C0AEC151B666ED609554CE8 /* Pods_PlumbyTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8682E88B2583F1F30036E241 /* dosis */ = {
+			isa = PBXGroup;
+			children = (
+				8682E88C2583F1F30036E241 /* SIL Open Font License.txt */,
+				8682E88D2583F1F30036E241 /* Dosis-Regular.otf */,
+				8682E88E2583F1F30036E241 /* Dosis-Light.otf */,
+				8682E88F2583F1F30036E241 /* Dosis-Medium.otf */,
+				8682E8902583F1F30036E241 /* Dosis-ExtraLight.otf */,
+				8682E8912583F1F30036E241 /* Dosis-ExtraBold.otf */,
+				8682E8922583F1F30036E241 /* Dosis-SemiBold.otf */,
+				8682E8932583F1F30036E241 /* Dosis-Bold.otf */,
+			);
+			path = dosis;
 			sourceTree = "<group>";
 		};
 		9EECDDA2CBB8F0FED88A7618 /* Pods */ = {
@@ -298,8 +333,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				00990134255E5C7900C30354 /* LaunchScreen.storyboard in Resources */,
+				8682E8952583F1F30036E241 /* Dosis-Regular.otf in Resources */,
+				8682E89A2583F1F30036E241 /* Dosis-SemiBold.otf in Resources */,
+				8682E8942583F1F30036E241 /* SIL Open Font License.txt in Resources */,
 				00990131255E5C7900C30354 /* Assets.xcassets in Resources */,
+				8682E89B2583F1F30036E241 /* Dosis-Bold.otf in Resources */,
 				0099012F255E5C7700C30354 /* Main.storyboard in Resources */,
+				8682E8962583F1F30036E241 /* Dosis-Light.otf in Resources */,
+				862233AC2583E19C00CEA61A /* 2gears.gif in Resources */,
+				8682E8982583F1F30036E241 /* Dosis-ExtraLight.otf in Resources */,
+				8682E8992583F1F30036E241 /* Dosis-ExtraBold.otf in Resources */,
+				8682E8972583F1F30036E241 /* Dosis-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
